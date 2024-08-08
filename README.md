@@ -30,7 +30,7 @@ For a detailed overview of the web page UI design, please refer to the [UI Desig
 - contribution: (Gwantea Lee)
 #### Del_RecipeModal.js
 - Description: Delete the recipe function. & the modal window that asks again before deleting the recipe.
-- contribution: (Geunmok Song)
+- contribution: (Gwantea Lee)
 #### Dt_Recipe.js
 - Description: Recipe details and shows all data such as food photos, ingredients, recipes, and reviews.
 - contribution: (Geunmok Song)Food ingredients, recipes, reviews parts (Gwantea Lee) Food photo part
