@@ -1,7 +1,7 @@
 # Recipe Web Project
 
 ## Description
-The project is a recipe web page where users can view other people's opinions while storing and sharing their cooking recipes. Users can upload their own recipes, browse recipes shared by other users, and leave comments or evaluate comments on each recipe. The web page aims to revitalize the cooking community and let users learn by sharing their cooking experiences with each other. This project is team project. Hence, the contributions of the team members to this program are detailed in the Description of Web page components and style files section below.
+The project is a recipe web page where users can view other people's opinions while storing and sharing their cooking recipes. Users can upload their own recipes, browse recipes shared by other users, and leave comments or evaluate comments on each recipe. The web page aims to revitalize the cooking community and let users learn by sharing their cooking experiences with each other. This project is team project. Hence, the contributions of the team members to this program are detailed in the `Description of Web page components and style files` section below.
 
 ## Features
 
