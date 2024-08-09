@@ -45,7 +45,7 @@ small {
     font-size: 10px;
 }
 
-.add_container {
+.mod_container {
     display: grid;
     place-items: center; 
     height: 60vh;
@@ -62,37 +62,8 @@ small {
     font-size: 20px;
 }
 
-.del_btn{
-    background: rgb(255, 0, 0);
-    background: -moz-linear-gradient(to bottom, rgba(254, 231, 154, 1) 0%, rgba(254, 193, 81, 1) 100%);
-    background: -webkit-linear-gradient(to bottom, rgba(254, 231, 154, 1) 0%, rgba(254, 193, 81, 1) 100%);
-    background: -o-linear-gradient(to bottom, rgba(254, 231, 154, 1) 0%, rgba(254, 193, 81, 1) 100%);
-    background: -ms-linear-gradient(to bottom, rgba(254, 231, 154, 1) 0%, rgba(254, 193, 81, 1) 100%);
-    background: linear-gradient(to bottom, rgba(254, 231, 154, 1) 0%, rgba(254, 193, 81, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fee79a', endColorstr='#fec151', GradientType=0);
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
-    -o-border-radius: 30px;
-    border-radius: 30px;
-    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.8) inset;
-    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.8) inset;
-    -ms-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.8) inset;
-    -o-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.8) inset;
-    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.8) inset;
-    border: 1px solid #D69E31;
-    color: #85592e;
-    cursor: pointer;
-    float: left;
-    font: bold 15px Helvetica, Arial, sans-serif;
-    height: 35px;
-    margin: 5px 0 35px 15px;
-    position: relative;
-    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
-    width: 150px;
-}
 
-#add_content {
+#mod_content {
     background: #f9f9f9;
     background: -moz-linear-gradient(to bottom, rgba(248, 248, 248, 1) 0%, rgba(249, 249, 249, 1) 100%);
     background: -webkit-linear-gradient(to bottom, rgba(248, 248, 248, 1) 0%, rgba(249, 249, 249, 1) 100%);
@@ -131,7 +102,7 @@ small {
     overflow: hidden;
 }
 
-#add_content h1 {
+#mod_content h1 {
     color: #7E7E7E;
     font: bold 25px Helvetica, Arial, sans-serif;
     letter-spacing: -0.05em;
@@ -139,8 +110,8 @@ small {
     margin: 10px 0 30px;
 }
 
-#add_content h1:before,
-#add_content h1:after {
+#mod_content h1:before,
+#mod_content h1:after {
     content: "";
     height: 1px;
     position: absolute;
@@ -148,7 +119,7 @@ small {
     width: 27%;
 }
 
-#add_content h1:after {
+#mod_content h1:after {
     background: rgb(126, 126, 126);
     background: -moz-linear-gradient(to left, rgba(126, 126, 126, 1) 0%, rgba(255, 255, 255, 1) 100%);
     background: -webkit-linear-gradient(to left, rgba(126, 126, 126, 1) 0%, rgba(255, 255, 255, 1) 100%);
@@ -158,7 +129,7 @@ small {
     right: 0;
 }
 
-#add_content h1:before {
+#mod_content h1:before {
     background: rgb(126, 126, 126);
     background: -moz-linear-gradient(to right, rgba(126, 126, 126, 1) 0%, rgba(255, 255, 255, 1) 100%);
     background: -webkit-linear-gradient(to right, rgba(126, 126, 126, 1) 0%, rgba(255, 255, 255, 1) 100%);
@@ -169,8 +140,8 @@ small {
 }
 
 
-#add_content:after,
-#add_content:before {
+#mod_content:after,
+#mod_content:before {
     background: #f9f9f9;
     background: -moz-linear-gradient(to bottom, rgba(248, 248, 248, 1) 0%, rgba(249, 249, 249, 1) 100%);
     background: -webkit-linear-gradient(to bottom, rgba(248, 248, 248, 1) 0%, rgba(249, 249, 249, 1) 100%);
@@ -188,7 +159,7 @@ small {
 }
 
 
-#add_content:after {
+#mod_content:after {
     -webkit-transform: rotate(2deg);
     -moz-transform: rotate(2deg);
     -ms-transform: rotate(2deg);
@@ -198,7 +169,7 @@ small {
     z-index: -1;
 }
 
-#add_content:before {
+#mod_content:before {
     -webkit-transform: rotate(-3deg);
     -moz-transform: rotate(-3deg);
     -ms-transform: rotate(-3deg);
@@ -208,12 +179,12 @@ small {
     z-index: -2;
 }
 
-#add_content form {
+#mod_content form {
     margin: 0 20px;
     position: relative
 }
 
-#add_content form input[type="text"] {
+#mod_content form input[type="text"] {
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
@@ -238,7 +209,7 @@ small {
     width: 80%;
 }
 
-#add_content form input[type="text"]:focus {
+#mod_content form input[type="text"]:focus {
     -webkit-box-shadow: 0 0 2px #ed1c24 inset;
     -moz-box-shadow: 0 0 2px #ed1c24 inset;
     -ms-box-shadow: 0 0 2px #ed1c24 inset;
@@ -249,11 +220,11 @@ small {
     outline: none;
 }
 
-#add_content form input[type="file"] {
+#mod_content form input[type="file"] {
     margin-left: 80px;
 }
 
-#add_content form input[type="submit"] {
+#mod_content form input[type="submit"] {
     background: rgb(254, 231, 154);
     background: -moz-linear-gradient(to bottom, rgba(254, 231, 154, 1) 0%, rgba(254, 193, 81, 1) 100%);
     background: -webkit-linear-gradient(to bottom, rgba(254, 231, 154, 1) 0%, rgba(254, 193, 81, 1) 100%);
@@ -283,7 +254,7 @@ small {
     width: 120px;
 }
 
-#add_content form button{
+#mod_content form button{
     background: rgb(254, 231, 154);
     background: -moz-linear-gradient(to bottom, rgba(254, 231, 154, 1) 0%, rgba(254, 193, 81, 1) 100%);
     background: -webkit-linear-gradient(to bottom, rgba(254, 231, 154, 1) 0%, rgba(254, 193, 81, 1) 100%);
@@ -313,7 +284,7 @@ small {
     width: 150px;
 }
 
-#add_content form button:hover {
+#mod_content form button:hover {
     background: rgb(254, 193, 81);
     background: -moz-linear-gradient(to bottom, rgba(254, 193, 81, 1) 0%, rgba(254, 231, 154, 1) 100%);
     background: -webkit-linear-gradient(to bottom, rgba(254, 193, 81, 1) 0%, rgba(254, 231, 154, 1) 100%);
@@ -323,7 +294,7 @@ small {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fec151', endColorstr='#fee79a', GradientType=0);
 }
 
-#add_content form .del_btn{
+#mod_content form .del_btn{
     background: firebrick;
     background: -moz-linear-gradient(to bottom, firebrick 0%, firebrick 100%);
     background: -webkit-linear-gradient(to bottom, firebrick 0%, firebrick 100%);
@@ -352,7 +323,7 @@ small {
     width: 150px;
 }
 
-#add_content form .del_btn:hover {
+#mod_content form .del_btn:hover {
     background: #d43f00;
     background: -moz-linear-gradient(to bottom, #d43f00 0%, #c0392b 100%);
     background: -webkit-linear-gradient(to bottom, #d43f00 0%, #c0392b 100%);
@@ -362,7 +333,7 @@ small {
 }
 
 
-#add_content form input[type="submit"]:hover {
+#mod_content form input[type="submit"]:hover {
     background: rgb(254, 193, 81);
     background: -moz-linear-gradient(to bottom, rgba(254, 193, 81, 1) 0%, rgba(254, 231, 154, 1) 100%);
     background: -webkit-linear-gradient(to bottom, rgba(254, 193, 81, 1) 0%, rgba(254, 231, 154, 1) 100%);
@@ -372,7 +343,7 @@ small {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fec151', endColorstr='#fee79a', GradientType=0);
 }
 
-#add_content form .add_inst_btn {
+#mod_content form .mod_inst_btn {
     height: 40px;
     margin-top: 30px;
     display: flex;
@@ -380,7 +351,7 @@ small {
     align-items: center;
 }
 
-#add_content form .add_last_btn_line {
+#mod_content form .mod_last_btn_line {
     height: 40px;
     margin-top: 30px;
     margin-bottom: 50px;
@@ -389,13 +360,13 @@ small {
     align-items: center;
 }
 
-#add_content form .table_container {
+#mod_content form .table_container {
     display: flex;
     justify-content: center;
     align-items: center; 
 }
 
-#add_content form .ingre_table {
+#mod_content form .ingre_table {
     border: 1px #a39485 solid;
     font-size: .9em;
     box-shadow: 0 2px 5px rgba(0,0,0,.25);
@@ -405,16 +376,7 @@ small {
     overflow: hidden;
 }
 
-
-#add_content form div a {
-    color: #004a80;
-    float: right;
-    font-size: 12px;
-    margin: 30px 15px 0 0;
-    text-decoration: underline;
-}
-
-#add_content form .filebutton{
+#mod_content form .filebutton{
     background: rgb(154, 214, 254);
     background: -moz-linear-gradient(to bottom, rgba(154, 214, 254) 0%, rgb(81, 156, 254) 100%);
     background: -webkit-linear-gradient(to bottom, rgba(154, 214, 254) 0%, rgba(81, 156, 254) 100%);
@@ -447,7 +409,7 @@ small {
     width: 100px;
 }
 
-#add_content form .filebutton:hover {
+#mod_content form .filebutton:hover {
     background: rgb(81, 156, 254);
     background: -moz-linear-gradient(to bottom, rgba(81, 156, 254, 1) 0%, rgba(154, 214, 254) 100%);
     background: -webkit-linear-gradient(to bottom, rgba(81, 156, 254, 1) 0%, rgba(154, 214, 254) 100%);
@@ -455,6 +417,15 @@ small {
     background: -ms-linear-gradient(to bottom, rgba(81, 156, 254, 1) 0%, rgba(154, 214, 254) 100%);
     background: linear-gradient(to bottom, rgba(81, 156, 254, 1) 0%, rgba(154, 214, 254) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fec151', endColorstr='#fee79a', GradientType=0);
+}
+
+
+#mod_content form div a {
+    color: #004a80;
+    float: right;
+    font-size: 12px;
+    margin: 30px 15px 0 0;
+    text-decoration: underline;
 }
 
 .button {

@@ -41,7 +41,7 @@ export default function User_Register() {
   const pwRef = useRef(null);
 
   return (
-    <div class="container">
+    <div className="container">
       <section id="content">
         <form onSubmit={onSubmit}>
           <h1>Register</h1>

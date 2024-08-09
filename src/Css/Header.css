@@ -21,6 +21,10 @@ body {
     height: 100%;
 }
 
+#hd_content {
+    width: 900px;
+}
+
 #hd_content button{
     background: rgb(254, 231, 154);
     background: -moz-linear-gradient(to bottom, rgba(254, 231, 154, 1) 0%, rgba(254, 193, 81, 1) 100%);

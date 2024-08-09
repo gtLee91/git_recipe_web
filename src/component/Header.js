@@ -13,12 +13,13 @@ export default function Header() {
   };
   return (
     <section id="hd_content">
-      <div className="header">
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+          
           <h1>
             <Link to="/RecipeList" style={{fontSize:"45px"}}>Recipe Web</Link>
           </h1>
           
-          <div className="menu">
+          <div style={{ display: "flex", gap: "10px" }}>
             <Link to="/RecipeAdd">
               <button style={{ color: "black" }}>
                 Add Recipe
@@ -28,7 +29,8 @@ export default function Header() {
               Logout
             </button>
           </div>
-      </div>
+
+        </div>
     </section>
   );
 }

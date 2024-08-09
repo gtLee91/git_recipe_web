@@ -166,7 +166,7 @@ export default function Dt_Recipe() {
     return (
         <>
             <Header />
-            <div class="container_Dt">
+            <div className="container_Dt">
                 <section id="content_Dt">
                     <DelModal
                         show={showModal}

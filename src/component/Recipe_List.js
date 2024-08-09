@@ -74,7 +74,7 @@ export default function Recipe_List() {
   return (
     <>
       <Header />
-      <div class="container_re">
+      <div className="container_re">
         <section id="content_re">
           <div className="input_search">
             <input type="text" placeholder="Name" ref={NameRef} />

@@ -19,6 +19,14 @@ export default function Recipe_Add() {
 
   const [rows, setRows] = useState([""]);
   const [inputValues, setInputValues] = useState([""]);
+  const [fileName, setFileName] = useState('');
+
+  const handleFileChange = (event) => {
+    const file = event.target.files[0];
+    if (file) {
+      setFileName(file.name);
+    }
+  };
 
   useEffect(() => {
     fetch("https://localhost:7230/api/Ingredient")
@@ -141,7 +149,7 @@ export default function Recipe_Add() {
   const combinedInstValues = inputValues.join(",");
 
   return (
-    <div class="add_container">
+    <div className="add_container">
       <section id="add_content">
 
         <form onSubmit={onSubmit}>
@@ -165,8 +173,8 @@ export default function Recipe_Add() {
           <div className="input_area">
             <h3>Ingredient Select</h3>
             <div style={{ display: "flex", alignItems: "center", marginLeft:"160px", height:"60px" }}>
-            <select ref={ingreRef} onChange={handleAddClick} style={{ width: "250px"}}>
-              <option value="" disabled selected>------</option>
+            <select ref={ingreRef} onChange={handleAddClick} defaultValue="" style={{ width: "250px"}}>
+              <option value="" disabled>------</option>
               {ingredients.map((ingre) => (
                 <option key={ingre.id} value={ingre.name} data-id={ingre.id}>
                   {ingre.name}
@@ -182,7 +190,7 @@ export default function Recipe_Add() {
             </div>            
           </div>
 
-          <div className="table_container" style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
+          <div className="table_container">
             <table className="ingre_table">
               <tbody>
                 {selectedIngredients.map((ingredient) => (
@@ -221,7 +229,7 @@ export default function Recipe_Add() {
                 ))}
               </tbody>
             </table>
-            <div style={{ height: "40px", marginTop: "30px", display: "flex", justifyContent: "center", alignItems: "center" }}>
+            <div className="add_inst_btn">
               <button onClick={Add_Line} type="button">
                 Add Line
               </button>
@@ -232,12 +240,16 @@ export default function Recipe_Add() {
             
           </div>
 
-          <div className="input_area">
+          <div>
             <h3>Picture</h3>
-            <input type="file" ref={picRef} />
+            <div className="add_last_btn_line">
+              <input type="file" ref={picRef} name="uploadfile" id="img" style={{display:"none"}} onChange={handleFileChange}/>
+              <label htmlFor="img" className="filebutton">Select file</label>
+              {fileName && <p style={{marginLeft: "30px", fontSize : "16px" , fontWeight: "bold" }}>{fileName}</p>}
+            </div>
           </div>
 
-          <div style={{ height: "40px", marginTop: "30px", marginBottom:"50px", display: "flex", justifyContent: "center", alignItems: "center" }}>
+          <div className="add_last_btn_line">
             <button style={{ opacity: isLoading ? 0.3 : 1, marginTop:"38px"}}>
               {isLoading ? "Saveing..." : "Save"}
             </button>

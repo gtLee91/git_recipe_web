@@ -34,7 +34,7 @@ export default function Login() {
   const PasswordRef = useRef(null);
 
   return (
-    <div class="container">
+    <div className="container">
       <section id="content">
         <form onSubmit={onSubmit}>
           <h1>Login</h1>
