@@ -1,7 +1,9 @@
 # Recipe Web Project
 
 ## Description
-The project is a recipe web page where users can view other people's opinions while storing and sharing their cooking recipes. Users can upload their own recipes, browse recipes shared by other users, and leave comments or evaluate comments on each recipe. The web page aims to revitalize the cooking community and let users learn by sharing their cooking experiences with each other. This project is team project. Hence, the contributions of the team members to this program are detailed in the `Description of Web page components and style files` section below.
+This project is a recipe web application where users can store, share, and explore cooking recipes while engaging with the community by reading and leaving comments or evaluations on each recipe. Users can upload their own recipes, browse those shared by others, and interact with fellow cooks. The web application aims to foster a vibrant cooking community where users can learn and share their culinary experiences.
+
+This project was developed using React and JavaScript as part of a team effort. The contributions of each team member are detailed in the section below, Description of Web Page Components and Style Files.
 
 ## Features
 
